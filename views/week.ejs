@@ -7,9 +7,7 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/week.css">
 </head>
-
 <body>
-
 
   <%let weekdays=["SUN","MON","TUE","WED","THU","FRI","SAT"];
       let months=["JAN","FEB","MARCH","APRIL","MAY","JUNE","JULY","AUG","SEP","OCT","NOV","DEC"];
@@ -36,6 +34,9 @@
     <%for(let i=0;i<habits.length;i++){%>
     <div class="center">
       <h3><%=habits[i]%></h3>
+      <span>Done:<%=tasks[i].done%></span>
+      <span>Notdone: <%=tasks[i].Notdone%></span>
+      <span>Total:<%=tasks[i].total%></span>
     </div>
     <div class="containers">
       <%let flag;for(let j=6;j>=0; j--) {

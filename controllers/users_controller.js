@@ -95,43 +95,6 @@ module.exports.update = async function (req, res) {
     return;
   }
 };
-
-//Details of all habit
-module.exports.detail = async function (req, res) {
-  try {
-    let detail = await Detail.find({});
-    let habits = [];
-    let tasks = [];
-
-    for (let d of detail) {
-      if (habits.indexOf(d.habit) == -1) habits.push(d.habit);
-    }
-
-    for (let i = 0; i < habits.length; i++) {
-      let done = 0,
-        Notdone = 0;
-      let task = {};
-      for (let d of detail) {
-        if (habits[i] == d.habit && d.status == "Done") done++;
-        else if (habits[i] == d.habit && d.status == "NotDone") Notdone++;
-      }
-      task.done = done;
-      task.Notdone = Notdone;
-      task.total = done + Notdone;
-      tasks.push(task);
-    }
-
-    return res.render("detail", {
-      title: "WeekView",
-      habits: habits,
-      tasks: tasks,
-    });
-  } catch (err) {
-    console.log("Error", err);
-    return;
-  }
-};
-
 //delete habit
 module.exports.delete_habit = async function (req, res) {
   try {

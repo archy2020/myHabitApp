@@ -20,18 +20,13 @@
         <div class="button-container1">
           <!-- button for new habit entry pop up form -->
           <div class="open">
-            <button class="open-button" onclick="openForm()">
+            <button class="open-button btn" onclick="openForm()">
               Add New Habit
             </button>
           </div>
           <div class="week-button">
             <button type="button" class="btn">
               <a href="/users/find">Week Plan </a>
-            </button>
-          </div>
-          <div class="status-button">
-            <button type="button" class="btn">
-              <a href="/users/detail">Status </a>
             </button>
           </div>
         </div>
@@ -77,18 +72,15 @@
       <div class="form-popup" id="myForm">
         <form action="users/create_habit" class="form-container" method="POST">
           <h1>Include your new Habit</h1>
-
-          <!-- <label for="name"><b>Habit</b></label>
-          <input type="text" placeholder="Enter Habit" name="name" /> -->
-
-          <label for="name"><b>Habit</b></label> <br>
+          <label for="name"><b>Habit</b></label> <br />
           <select id="options" name="name">
-            <option value="Cardio"> Cardio</option>
+            <option value="Prayer">Prayer</option>
+            <option value="Cardio">Cardio</option>
             <option value="Workout">Workout</option>
             <option value="Dancing">Dancing</option>
             <option value="Study">Study</option>
-          </select> <br>
-
+          </select>
+          <br />
 
           <label for="duration"><b>Duration</b></label>
           <input

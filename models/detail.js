@@ -5,18 +5,18 @@ const habitSchema = new mongoose.Schema(
   {
     habit: {
       type: String,
-      required: true,
+      required: true
     },
     status: {
       type: String,
-      required: true,
+      required: true
     },
     duration: {
-      type: Number,
+      type: Number
     },
 
     date: {
-      type: dateonly,
+      type: dateonly
     },
   },
   { timestamps: true }
