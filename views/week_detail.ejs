@@ -1,0 +1,98 @@
+<html>
+  <head>
+     <title>
+       <%= title%>
+     </title>
+      
+     
+     
+      <link rel="stylesheet" href="/css/home.css">
+      <meta charset="utf-8">
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+           
+      <meta name="viewport" content="width-device-width, initial scale =1">
+  </head>
+  <body>
+      
+
+      <h2 class="week-heading">Weekly Progress Status</h2>
+      <!-- <% for(let d of habit_list) {%> 
+      <table class="table" border="2">
+        <thead class="thead_h">
+          <tr>
+            <!-- <th scope="col">Days</th> -->
+            <th scope="col">Sunday</th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+            <th scope="col">Wednesday</th>
+            <th scope="col">Thursday</th>
+            <th scope="col">Friday</th>
+            <th scope="col">Saturday</th>
+          </tr>
+        <tr>
+          <!-- <th scope="col">Habit</th> -->
+          <th scope="col">1 Aug</th>
+          <th scope="col">2 Aug</th>
+          <th scope="col">3 Aug</th>
+          <th scope="col">4 Aug</th>
+          <th scope="col">5 Aug</th>
+          <th scope="col">6 Aug</th>
+          <th scope="col">7 Aug</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><div class="toggle"><a href="/users/update/<%=d._id%>&Done"></a>
+            <button type="button" class="update" onclick="submitButtonStyle(this)">NotDone</button></div></td>
+        <td><div class="toggle"><a href="/users/update/<%=d._id%>&Done"></a>
+            <button type="button" class="update" onclick="submitButtonStyle(this)">NotDone</button></div></td>
+       </tr> 
+       </tbody>
+
+    </table> -->
+    <!-- <%}%>  -->
+      <!-- <div id="result"></div> -->
+   
+      <%for(let i=0;i<habits.length;i++){%>
+        <div class="center">
+        <h1 style="color:brown"><%=habits[i]%></h1>
+        <span style="color:slateblue">Done:<%=tasks[i].done%></span>
+        <span style="color:slateblue">Notdone:<%=tasks[i].Notdone%></span>
+        <!--<span style="color:slateblue">Streak:<%=tasks[i].streak%></span>-->
+        <span style="color:slateblue">Total:<%=tasks[i].total%></span>
+    </div>
+        <div class="containers">
+    <!-- <%let flag;for(let j=6;j>=0; j--) {
+       let datetime = new Date();
+       let thatDay = datetime.getDate() - j; 
+       datetime.setDate(thatDay);flag=false;
+     %> -->
+     <!-- <div><h1><%=datetime.toISOString().slice(8,10)%></h1> -->
+     <div>
+     <%for(let d of detail){
+        <!-- if(habits[i]==d.habit){
+         if(d.createdAt.toISOString().slice(0,10)==datetime.toISOString().slice(0,10)){ flag=true; -->
+     %>
+      <%if(d.status ==="Done"){%>
+      <div><a href="/users/update/<%=d._id%>&NotDone"><button type="button" class="btn btn-outline-danger"> <i class="fa fa-thumbs-o-up"></i></button></a></div>  
+     
+      <%}else if(d.status === "NotDone"){%>
+        <div><a href="/users/update/<%=d._id%>&None"><button type="button" class="btn btn-outline-secondary"><i class="fa fa-times"></i></button></a></div>
+      <%}else if(d.status === "None"||d.status === "Pending"){%>
+        <div><a href="/users/update/<%=d._id%>&Done"><button type="button" class="btn btn-outline-success"><i class="fa fa-ban"></i></button></a></div>    
+      <%}%> 
+     
+    
+<%break;}}}%>
+<!-- <%if(!flag){%> -->
+    <!-- <div>Empty</div> -->
+<%}%>
+</div>
+<%}%>
+</div>
+<%}%>
+
+    <script type="text/javascript" src="/js/home.js"></script>
+  </body>
+
+
+</html>

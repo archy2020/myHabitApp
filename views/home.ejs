@@ -15,13 +15,23 @@
       </div>
       <!-- page heading -->
       <div id="page-heading">
-        <div>
+        <!-- <div>
           <h2>Daily Habit</h2>
-        </div>
+        </div> -->
+
+      <div class="button-container1">
         <!-- button for new habit entry pop up form -->
-        <div>
+        <div class="open">
           <button class="open-button" onclick="openForm()">Add More Habits</button>
         </div>
+        <div class="week-button">
+          <button type="button" class="btn "><a href="/users/find">Week Plan </a></button>
+        </div>
+        <div class="status-button">
+          <button type="button" class="btn "><a href="/users/detail">Status </a></button>
+        </div>
+      </div>
+      
       </div>    
         <!-- habit list entry  -->
       <div id="habit_list_container">
@@ -30,34 +40,27 @@
               
               <li class="habbit">
                 <div class="detail">  
-                  <p id="my_name"><%= i.name %></a> </p>
-                  <p>Status: <%= i.status %> </p>
-                  <p>Duration: <%= i.duration %> hr</p>
-                  <p>Start Date: <%= i.date %></p>
-                </div>
-                <!-- <div id="seeResult">Hi</div> -->
+                  <div id="my_name">
+                    <p><%= i.habit %></p>
+                  </div>
+                  <div>
+                   <p style="font-weight: 700; color: rgb(18, 4, 95); text-align: right;">Start Date: <%= i.date %></p>
+                   <p style="font-weight: 700; color: crimson; text-align: right;">Duration: <%= i.duration %> hr</p>
+                  </div>
+                <!-- </div> -->
+                <!-- <div class="button-container"> -->
                 <div class="delete-button">
-                    <a href="users/delete_habit/?id=<%= i._id %>">
-                    <button type="submit" class="btn">Remove This Habit</button>
-                  </a>
-                </div>
-                <div class="week-button">
-                  <button type="button" class="btn "><a href="/users/week">Week Plan </a></button>
-                </div>
+                  <a href="users/delete_habit/?id=<%= i._id %>">
+                  <button type="submit" class="btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                </a>
+              </div>
+              </div>
               </li>
-               
-              <!-- // form on week page inside form select option nd submit <button>
-              // form action update database
-              // form hidden
-              // form display on click week button on habbit
-              </button>
-              // button on week page
-              // onclick="openForm()"
-   -->
               <%}%>
         </ul>
   
       </div>
+
 
       <!-- pop up form -->
       <div class="form-popup" id="myForm">
@@ -65,16 +68,16 @@
           <h1>Include your new Habit</h1>
       
           <label for="name"><b>Habit</b></label>
-          <input type="text" placeholder="Enter Habit" name="name" required>
+          <input type="text" placeholder="Enter Habit" name="name" >
 
           <!-- <label for="completed"><b>Completed Days</b></label>
           <input type="number" placeholder="Enter completed in day" name="completed" required> <br>
        -->
           <label for="duration"><b>Duration</b></label>
-          <input type="number" placeholder="Enter Duration in hour" name="duration" required> <br>
+          <input type="number" placeholder="Enter Duration in hour" name="duration"> <br>
 
           <label for="date"><b>Date of Creation</b></label><br>
-          <input type="date" placeholder="Enter Date" name="date" required>
+          <input type="date" placeholder="Enter Date" name="date">
       
           <button type="submit" class="btn">Add Habits</button>
           <button type="button" class="btn cancel" onclick="closeForm()">Close</button>

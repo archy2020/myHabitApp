@@ -1,5 +1,5 @@
 //const db = require('./config/mongoose');
-const Habit=require('../models/habit');
+const Habit=require('../models/detail');
 
 module.exports.home = async function(req, res){
     try{

@@ -3,7 +3,7 @@ const path = require('path');
 const port = 8000;
 
 const db = require('./config/mongoose');
-const Habbit = require('./models/habit');
+const Habbit = require('./models/detail');
 const app = express();
 
 app.set('view engine', 'ejs');
