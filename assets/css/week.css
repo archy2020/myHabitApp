@@ -1,92 +1,91 @@
-body{
-    /* background-color:rgba(11, 8, 22, 0.938); */
-    background-image: url('/images/SIDTnd.jpg');
+body {
+  background-image: url("/images/SIDTnd.jpg");
 }
 
 ul {
-    list-style: none;
-    color:rgb(39, 54, 8);
+  list-style: none;
+  color: rgb(39, 54, 8);
 }
-.button{
-    color:rgb(2, 1, 19);
+.button {
+  color: rgb(2, 1, 19);
 }
-.containers{
-  display:flex;
-  justify-content:space-between;
-  flex:1;
-  margin:10px;
-  padding:20px;
-  color:rgb(9, 3, 24);
+.containers {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  color: rgb(9, 3, 24);
   background-color: orangered;
   border: 2px solid rgb(226, 91, 12);
-  width:60%;
+  width: 60%;
 }
-.containers div{
-    width:50px;
+.containers div {
+  width: 50px;
 }
-.center{
-    text-align: left;
-    margin:10px;
-    font-size: 20px;
-    font-weight: 600;
-  }
+.center {
+  text-align: left;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
 
-  .center h3{
-    color: white;
-  }
+.center h3 {
+  color: white;
+}
 
-  .center span{
-      color: rgb(240, 136, 17);
-  }
-  .btn {
-    border-radius: 4px;
-    background-color: #3db4c4;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 15px;
-    padding: 5px;
-    width: 50px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-  }
+.center span {
+  color: rgb(240, 136, 17);
+}
+.btn {
+  border-radius: 4px;
+  background-color: #3db4c4;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  width: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
 
 .btn1 {
-    border-radius: 4px;
-    background-color: #206b20;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 20px;
-    padding: 15px;
-    width: 150px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-  }
-  
-  .btn1 span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .btn1 span:after {
-    content: ' \00AB';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: 20px;
-    transition: 0.5s;
-  }
-  
-  .btn1:hover span {
-    padding-left: 25px;
-  }
-  
-  .btn1:hover span:after {
-    opacity: 1;
-    left: 0;
-  }
+  border-radius: 4px;
+  background-color: #206b20;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn1 span:after {
+  content: " \00AB";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 20px;
+  transition: 0.5s;
+}
+
+.btn1:hover span {
+  padding-left: 25px;
+}
+
+.btn1:hover span:after {
+  opacity: 1;
+  left: 0;
+}

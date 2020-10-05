@@ -1,26 +1,25 @@
-body{
-    height: 100%;
-    background-image: url('/images/SIDTnd.jpg');
-    font-family: sans-serif;
-    color: #0f222d;
-    background-size: auto;
-    text-align: center;
-    padding: auto;
+body {
+  height: 100%;
+  background-image: url("/images/SIDTnd.jpg");
+  font-family: sans-serif;
+  color: #0f222d;
+  background-size: auto;
+  text-align: center;
+  padding: auto;
 }
-#main{
-    background-color: rgb(22, 15, 48);
-    width: 50%;
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
+#main {
+  background-color: rgb(22, 15, 48);
+  width: 50%;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
 }
 
-#page-heading
-{
+#page-heading {
   background-color: rgb(235, 140, 16);
-  padding: 10px 10px ;
+  padding: 10px 10px;
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -28,21 +27,19 @@ body{
   /* width: 60%; */
 }
 
-.open{
+.open {
   width: 30%;
   text-align: center;
   margin-top: 15px;
 }
 
-.open .open-button{
+.open .open-button {
   background-color: rgba(102, 204, 204, 0.863);
-  /* size: 8rem; */
-  font-size: 1rem ;
+  font-size: 1rem;
   color: white;
-  /* border-radius: 50%; */
 }
 
-.button-container1{
+.button-container1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -50,21 +47,14 @@ body{
   width: 60%;
 }
 
-#heading h1{
+#heading h1 {
   margin-top: -1rem;
   text-align: center;
   color: #fff;
-} 
+}
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-  /* background-color: #555; */
-  /* color: white; */
-  /* padding: 10px 10px; */
-  /* border: none; */
   cursor: pointer;
-  /* opacity: 0.8; */
-  /* margin-left: -7rem; */
-  /* width: 8rem; */
 }
 
 /* The popup form - hidden by default */
@@ -83,14 +73,15 @@ body{
   background-color: rgb(245, 209, 209);
 }
 
-.form-container h1{
+.form-container h1 {
   font-family: cursive;
   color: orangered;
   font-size: 1.5rem;
 }
 
 /* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
+.form-container input[type="text"],
+.form-container input[type="password"] {
   width: 100%;
   padding: 10px;
   margin: 5px 0 22px 0;
@@ -98,13 +89,25 @@ body{
   background: #f1f1f1;
 }
 
+#options{
+
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+
+}
+
 /* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
   background-color: #ddd;
   outline: none;
 }
 
-.form-container input[type=date], .form-container input[type=password] {
+.form-container input[type="date"],
+.form-container input[type="password"] {
   width: 100%;
   padding: 10px;
   margin: 5px 0 22px 0;
@@ -113,12 +116,14 @@ body{
 }
 
 /* When the inputs get focus, do something */
-.form-container input[type=date]:focus, .form-container input[type=password]:focus {
+.form-container input[type="date"]:focus,
+.form-container input[type="password"]:focus {
   background-color: #ddd;
   outline: none;
 }
 
-.form-container input[type=number], .form-container input[type=password] {
+.form-container input[type="number"],
+.form-container input[type="password"] {
   width: 100%;
   padding: 10px;
   margin: 5px 0 22px 0;
@@ -127,7 +132,8 @@ body{
 }
 
 /* When the inputs get focus, do something */
-.form-container input[type=number]:focus, .form-container input[type=password]:focus {
+.form-container input[type="number"]:focus,
+.form-container input[type="password"]:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -140,7 +146,7 @@ body{
   border: none;
   cursor: pointer;
   width: 100%;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   opacity: 0.8;
 }
 
@@ -150,52 +156,49 @@ body{
 }
 
 /* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
+.form-container .btn:hover,
+.open-button:hover {
   opacity: 1;
 }
 /* pop up form end */
 /* list for input */
-ul{
-    list-style-type: none;
-  }
-  
-  /* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd){
-    padding: 1rem;
-    margin-left: -2.3rem;
-    background: #f9f9f9;
-    border-radius: 10%;
-    margin-bottom: 1rem;
-  }
-ul li:nth-child(even) {
-    padding: 1rem;
-    margin-left: -2.3rem;
-    background: #eaf5ad;
-    border-radius: 10%;
-    margin-bottom: 1rem;
-  } 
-/* Darker background-color on hover */
-ul li:hover {
-    background: #ddd;
-  }
-.habbit{
-    display: flex;
-    flex-direction: column;
-}
-.detail p{
-    margin: 5px 0;
+ul {
+  list-style-type: none;
 }
 
-.detail #my_name{
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  padding: 1rem;
+  margin-left: -2.3rem;
+  background: #f9f9f9;
+  border-radius: 10%;
+  margin-bottom: 1rem;
+}
+ul li:nth-child(even) {
+  padding: 1rem;
+  margin-left: -2.3rem;
+  background: #eaf5ad;
+  border-radius: 10%;
+  margin-bottom: 1rem;
+}
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+.habbit {
+  display: flex;
+  flex-direction: column;
+}
+.detail p {
+  margin: 5px 0;
+}
+
+.detail #my_name {
   font-size: 20px;
   color: #7c380a;
 }
-/* 
-.detail p a{
- text-decoration: none;
-} */
 
-.habbit .detail{
+.habbit .detail {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -203,63 +206,61 @@ ul li:hover {
   width: 70%;
 }
 
-.delete-button{
+.delete-button {
   width: 1%;
   text-align: center;
   margin-top: 5px;
 }
 
-.delete-button .btn{
+.delete-button .btn {
   background-color: teal;
   size: 1rem;
-  font-size: 1rem ;
+  font-size: 1rem;
 }
 
-.status-button{
+.status-button {
   width: 5%;
   text-align: center;
   margin-top: 10px;
 }
 
-.status-button .btn{
+.status-button .btn {
   background-color: rgb(163, 14, 21);
   size: 4rem;
-  font-size: 1rem ;
-  /* border-radius: 50%; */
+  font-size: 1rem;
 }
 
-.week-button{
+.week-button {
   width: 5%;
   text-align: center;
   margin-top: 10px;
 }
 
-.week-button .btn{
+.week-button .btn {
   background-color: rgba(55, 58, 58, 0.863);
   size: 4rem;
-  font-size: 1rem ;
-  /* border-radius: 50%; */
+  font-size: 1rem;
 }
 
-.habbit .delete-button a{
+.habbit .delete-button a {
   color: white;
 }
-.week-button a{
+.week-button a {
   color: white;
   text-decoration: none;
 }
-.status-button a{
+.status-button a {
   color: white;
   text-decoration: none;
 }
 
- .btn {
+.btn {
   border: none;
   color: #f6faf5;
   text-align: center;
   font-size: 20px;
   padding: 15px;
-  width: 150px;
+  width: 120px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -273,7 +274,7 @@ ul li:hover {
 }
 
 .btn span:after {
-  content: ' \00AB';
+  content: " \00AB";
   color: #7c380a;
   position: absolute;
   opacity: 0;
@@ -291,35 +292,31 @@ ul li:hover {
   left: 0;
 }
 
-#result{
+#result {
   font-size: 20px;
   margin: auto;
   size: auto;
 }
 
-.heading{
+.heading {
   color: aliceblue;
-  text-align:center ;
+  text-align: center;
 }
 
-.containers-detail{
-  display:flex;
-  justify-content:space-between;
+.containers-detail {
+  display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  /* margin:10px; */
-  /* margin-left: 20rem; */
-  padding:10px;
+  padding: 10px;
   background-color: orangered;
   border: 2px solid rgb(226, 91, 12);
-  /* width:60%; */
 }
-
 
 .btn1 {
   border-radius: 4px;
   background-color: #206b20;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   font-size: 20px;
   padding: 15px;
@@ -337,7 +334,7 @@ ul li:hover {
 }
 
 .btn1 span:after {
-  content: ' \00AB';
+  content: " \00AB";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -353,4 +350,3 @@ ul li:hover {
   opacity: 1;
   left: 0;
 }
-
